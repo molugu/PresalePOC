@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/image_product"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/samsungun4j5200"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/description_product"
+        android:layout_below="@id/image_product"
+        android:text="Smart TV 4 LED Full HD Samsung UN40J5200 Entradas 2 HDMI 1 USB RCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ratingBar_product"
+        style="?android:ratingBarStyleSmall"
+        app:theme="@style/RatingBar"
+        android:rating="5"
+        android:stepSize="0.1"
+        android:layout_below="@id/description_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/price_product"
+        android:layout_below="@+id/ratingBar_product"
+        android:text="R$ 1.899"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:id="@+id/select_product"
+        android:layout_below="@id/price_product"
+        android:text="Select"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

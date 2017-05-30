@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_product"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true" />
+
+        <RatingBar
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_product"
+            android:layout_marginTop="5dp"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/RatingBar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/product_name"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/product_name"
+            android:id="@+id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/product_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="182134"
+                android:textAppearance="?android:textAppearanceSmall" />
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Loja:"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/loja_store"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:text=" CD:"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/cd_store"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/discount"
+                android:text="De: R$1.9291"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="R$ 1.899"/>
+
+            <ImageView
+                android:id="@+id/compare_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_compare"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

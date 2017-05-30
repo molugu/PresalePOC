@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/image_product_border"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ImageView
+    android:padding="2dp"
+    android:id="@+id/imageView_product"
+    android:layout_height="60dp"
+    android:layout_width="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

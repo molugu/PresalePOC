@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/action_back"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:text="Filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_by_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordenar por:"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:buttonTint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:text=" Menor Preço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:buttonTint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:text=" Maior Preço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:buttonTint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:text=" Mais vendido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:buttonTint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:text=" Nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/order_by_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preço"/>
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:absoluteMinValue="0"
+            app:absoluteMaxValue="100"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priority_layout">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prioridades"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_marginTop="10dp"
+            android:text="Netflix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_marginTop="10dp"
+            android:text="Accessar internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_marginTop="10dp"
+            android:text="Jogar videogame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_marginTop="10dp"
+            android:text="Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/priority_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight=".01"
+            android:background="@null"
+            android:paddingLeft="50dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_close"
+            />
+
+        <ImageButton
+            android:id="@+id/correctButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight=".01"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_correct" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

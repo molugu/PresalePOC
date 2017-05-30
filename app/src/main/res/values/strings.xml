@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Presale POC</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="Home">Home</string>
+    <string name="Products">Products</string>
+    <string name="Results">Resultados</string>
+    <string name="Items">Items</string>
+    <string name="Filter">Filtros</string>
+
+    <string name="Languages">Languages</string>
+    <string name="English">English</string>
+    <string name="Hindi">हिंदी</string>
+    <string name="Marathi">मराठी</string>
+
+
+</resources>
